@@ -1,0 +1,241 @@
+.header{
+    display: flex;  
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.fa-arrow-left{
+    color: #353535;
+    width: 17px;
+    height: 16px;
+}
+
+.image {
+   width: 100%;
+   height: 275px;
+}
+
+.image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    background-color: #F7F7F7;
+    margin-top: -55px;
+    position: relative;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.titre-restaurant{
+    margin: 0 41px 0 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.carte-titre{
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+    padding-bottom: 5px;
+}
+
+
+.carte-titre p{
+    margin: 31px 17px 0 17px;
+}
+
+.plat{
+    height: 70px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all .3s;
+    padding:0;
+    margin: 0 11px 20px 11px;
+    opacity: 0;
+    animation: plat .8s linear forwards;
+    overflow: hidden;
+}
+
+.plat .content{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.plat .content div{
+  max-width: calc(100% - 40px);
+}
+
+.plat:nth-child(1){
+  animation-delay: 3s;
+}
+
+.plat:nth-child(2){
+  animation-delay: 3.1s;
+}
+
+.plat:nth-child(3){
+  animation-delay: 3.2s;  
+}
+
+.plat:nth-child(4){
+  animation-delay: 3.3s;
+}
+
+.plat div span{
+    font-weight: 700;
+    display: block;
+    padding: 12px 0 12px 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.plat div p{
+    padding: 0 0 13px 11px;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.plat .prix{
+    font-weight: 500;
+    margin: 0 11px 13px 0;
+
+}
+
+.plat .checkbox{
+  position: absolute;
+  top: 0px;
+  right: -59px;
+  width: 59px;
+  height: 100%;
+  background-color: #8FDEC9;
+  color: white;
+  display: block;
+  border-top-right-radius:16px;
+  border-bottom-right-radius: 16px;
+  transition: all .3s;
+}
+
+.plat:hover{
+  padding-right: 59px;
+}
+
+.plat:hover .checkbox{
+  right: 0px;
+}
+
+.fa-circle-check{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*HEART*/
+.heart {
+  width: 21px;
+  height: 21px;
+}
+
+.fa-heart {
+  font-size: 21px;
+  color: #101010;
+}
+
+.fa-solid.fa-heart {
+  display: none;
+}
+
+.fa-regular.fa-heart {
+  display: block;
+}
+
+.heart:hover .fa-heart {
+  color: transparent;
+
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.heart:hover .fa-regular {
+  display: none;
+}
+
+.heart:hover .fa-solid {
+  display: block;
+}
+
+/* FIN HEART*/
+
+.button-rounded {
+    border-radius: 25px;
+    background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+    height: 50px;
+    width: 218px;
+    margin-bottom: 57px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    opacity: 1;
+    transition: all .3s;
+  }
+  
+.button-rounded p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 13px 18px;
+}
+
+.button-rounded:hover{
+    opacity: 0.8;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+@media screen and (min-width: 1200px) /*pc*/ {
+
+  main{
+    background-color: #ffffff;
+  }
+
+  .menu{
+    max-width: 1055px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+  }
+  
+  .titre-restaurant{
+    justify-content: center;
+  }
+
+  .titre-restaurant p{
+    margin-right: 15px;
+  }
+
+  .carte{
+    max-width: 669px;
+    margin: 0 auto;
+  }
+
+}

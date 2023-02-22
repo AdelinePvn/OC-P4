@@ -1,0 +1,78 @@
+@keyframes spinner {
+  0% {
+    top: 45%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 45%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 45%;
+    left: 45%;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 95%;
+    height: 95%;
+    opacity: 0;
+  }
+}
+
+@keyframes hideLoader {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  50% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  70% {
+    opacity: 0.99;
+    pointer-events: all;
+  }
+  99% {
+    opacity: 0;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes plat{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    40%{
+        opacity: 0.1;
+    }
+
+    50%{
+        opacity: 0.5;
+        transform: translateY(10px);
+    }
+    
+    70%{
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

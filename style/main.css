@@ -1,0 +1,249 @@
+.lieu {
+  color: #353535;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.lieu i {
+  margin: 17px 17px 0 0;
+}
+
+.lieu p {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+/* debut reservation */
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation h2 {
+  margin: 40px 58px 0 68px;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.reservation p {
+  margin: 0 26px 27px 34px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #353535;
+  text-align: center;
+}
+
+.button-rounded {
+  border-radius: 25px;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  height: 50px;
+  width: 218px;
+  margin-bottom: 57px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.button-rounded p {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 13px 18px;
+}
+
+/* fin reservation */
+
+/* debut fontionnement*/
+.fonctionnement h2 {
+  padding: 48px 80px 0 20px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.fonctionnement .number {
+  position: absolute;
+  left: -12px;
+  background-color: #9356dc;
+  color: #ffffff;
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.fonctionnement ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.fonctionnement ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  height: 72px;
+  margin: 0 20px 25px 12px;
+  padding-left: 33px;
+}
+
+.fonctionnement ul li  i {
+  color: #7e7e7e;
+  width: 20px;
+  margin-right: 24px;
+}
+
+.fonctionnement ul li p{
+  font-weight: 500;
+}
+
+.fonctionnement ul li:hover {
+  background-color: #f5edff;
+}
+
+.fonctionnement ul li:hover i {
+    color: #9356DC;
+  }
+
+/* fin fontionnement*/
+
+/* debut restaurant*/
+
+.restaurants h2 {
+  padding: 34px 0 20px 20px;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin: 0 17px 20px 17px;
+  position: relative;
+}
+
+.card a{
+  text-decoration: none;
+  color: #101010;
+}
+
+.card .tag {
+  position: absolute;
+  background-color: #99e2d0;
+  top: 13px;
+  right: 11px;
+  color: #008766;
+  padding: 7px 9px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.card .image {
+  width: 100%;
+  height: 231px;
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
+}
+
+.card .content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px 15px 13px;
+}
+
+.card .texte-card h3 {
+  margin: 0 0 6px 0;
+}
+
+.card .texte-card p{
+  margin: 0;
+} 
+
+
+/* début heart */
+.card .heart{
+  width: 21px;
+  height: 21px;
+}
+
+.card .fa-heart{
+  font-size: 21px;
+  color: #101010;
+}
+
+.card .fa-solid.fa-heart{
+  display: none;
+}
+
+.card .fa-regular.fa-heart{
+  display: block;
+}
+
+.card .heart:hover .fa-heart{
+  color: transparent;
+  
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.card .heart:hover .fa-regular{
+  display: none;
+}
+
+.card .heart:hover .fa-solid{
+  display: block;
+}
+
+/* fin heart */
+/* fin restaurant*/
+
+@media screen and (min-width: 1200px) /*pc*/ {
+  
+  .fonctionnement h2{
+    margin-bottom: 8px
+  } 
+
+  .fonctionnement .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+    
+  .fonctionnement ul{
+    display: flex;
+    justify-content: center;
+  } 
+
+  .fonctionnement ul li{
+    width: 333px;
+  }
+
+  .restaurants{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .restaurants .card-container{
+    display: flex;
+  }
+
+  .restaurants .card-container .card{
+    width: 325px;
+  }
+
+
+}

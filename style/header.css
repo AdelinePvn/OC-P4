@@ -1,0 +1,11 @@
+header{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+

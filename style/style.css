@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-grey{
+    background-color: #EAEAEA;
+}
+
+.bg-white{
+    background-color: #FFFFFF;
+}
+
+
