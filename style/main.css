@@ -239,6 +239,7 @@
 
   .restaurants .card-container{
     display: flex;
+    margin-bottom: 82px;
   }
 
   .restaurants .card-container .card{
