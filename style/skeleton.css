@@ -57,7 +57,7 @@
     height: 70px;
     background-color: white;
     border-radius: 16px;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     transition: all .3s;
     padding:0;
@@ -78,19 +78,19 @@
 }
 
 .plat:nth-child(1){
-  animation-delay: 3s;
+  animation-delay: 0s;
 }
 
 .plat:nth-child(2){
-  animation-delay: 3.1s;
+  animation-delay: .1s;
 }
 
 .plat:nth-child(3){
-  animation-delay: 3.2s;  
+  animation-delay: .2s;  
 }
 
 .plat:nth-child(4){
-  animation-delay: 3.3s;
+  animation-delay: .3s;
 }
 
 .plat div span{
@@ -146,45 +146,75 @@
   align-items: center;
 }
 
-/*HEART*/
-.heart {
+/* début heart */
+.heart{
   width: 21px;
   height: 21px;
+  position: relative;
 }
 
-.fa-heart {
+.fa-heart{
   font-size: 21px;
   color: #101010;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.fa-solid.fa-heart {
-  display: none;
+.fa-heart.fa-solid{
+  opacity: 0;
 }
 
-.fa-regular.fa-heart {
-  display: block;
-}
-
-.heart:hover .fa-heart {
+.heart:hover .fa-heart.fa-solid{
   color: transparent;
-
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+  opacity: 1;
+  animation:heart-fade-in 0.5s ease-in-out , heart 0.5s 0.5s ease-in-out ;
 }
 
-.heart:hover .fa-regular {
-  display: none;
+
+.heart:hover .fa-heart.fa-regular{
+  opacity: 0;
+  animation: heart-fade-out 0.5s ease-in-out;
 }
 
-.heart:hover .fa-solid {
-  display: block;
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-/* FIN HEART*/
+@keyframes heart-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes heart-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* fin heart */
 
 .button-rounded {
     border-radius: 25px;

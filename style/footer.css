@@ -26,6 +26,11 @@ footer li{
     margin: 0 0 7px 0;
 }
 
+footer ul li a{
+    text-decoration: none ;
+    color: #FFFFFF;
+}
+
 footer i{
     width: 11px;
     margin-right: 11px;
